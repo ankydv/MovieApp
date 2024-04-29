@@ -1,0 +1,43 @@
+.carouselItem {
+    width: 125px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.carouselItem .posterBlock {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+.carouselItem .posterBlock .lazy-load-image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.carouselItem .posterBlock .lazy-load-image-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.carouselItem .textBlock {
+    display: flex;
+    flex-direction: column;
+}
+.carouselItem .textBlock .title {
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.carouselItem .textBlock .date {
+    opacity: 0.5;
+}

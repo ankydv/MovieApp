@@ -1,0 +1,113 @@
+.filter-container {
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    color: white;
+  }
+  
+  .filter-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .filter-container .filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .filter-container .filters .filter {
+    max-height: 40vh;
+    overflow: auto;
+    padding-right: 20px;
+  }
+.filter-container .filters .filter::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .filter-container .filters .filter::-webkit-scrollbar-track {
+    background: #ccdaff; 
+  }
+  
+  .filter-container .filters .filter::-webkit-scrollbar-thumb {
+    background: #888888; 
+  }
+  
+  .filter-container .filters .filter::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .filter-container label {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+  
+  .filter-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  .filter-container .filter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+  .filter-container button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .filter-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Customizing checkboxes */
+  .filter-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .filter-container input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+  }
+  
+  .filter-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #4caf50;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }  
